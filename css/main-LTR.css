@@ -1641,7 +1641,7 @@ body.rounded-btns .read-more {
   left: -12px;
   width: 6px;
   aspect-ratio: 1/1;
-  background-color: var(--clr-white);
+  background-color: var(--clr-main);
   scale: 0;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
@@ -1893,7 +1893,7 @@ body.rounded-btns .read-more {
   visibility: hidden;
   opacity: 0;
   z-index: 15000;
-  background-color: var(--clr-main);
+  background-color: var(--clr-white);
   transition: all 0.3s ease-in-out 0s;
 }
 @media (max-width: 1199px) {
@@ -1919,7 +1919,7 @@ body.rounded-btns .read-more {
 }
 .header-basic .has-sub-menu > .sub-menu .sub-menu-link {
   line-height: unset;
-  color: var(--clr-white);
+  color: var(--clr-main);
   padding: 1rem;
   padding-left: 0;
 }
@@ -2230,7 +2230,7 @@ body.rounded-btns .read-more {
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
   background: rgba(var(--clr-white-rgb), 0.35);
-  color: var(--clr-white);
+  color: var(--clr-main);
   outline: none;
   top: 50%;
   transform: translateY(-50%);
@@ -2297,7 +2297,7 @@ body.rounded-btns .read-more {
   width: 3rem;
   height: 3rem;
   text-align: center;
-  color: var(--clr-white);
+  color: var(--clr-dark-blue);
   font-size: 2rem;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -2471,7 +2471,7 @@ body.rounded-btns .read-more {
 }
 .services-boxed .service-box {
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 0.5rem;
   border: 1px solid rgba(var(--clr-main-rgb), 0.35);
   box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.1);
 }
@@ -2559,7 +2559,7 @@ body.rounded-btns .read-more {
 }
 @media (max-width: 991px) {
   .services-boxed .service-box {
-    padding: 2rem;
+    padding: 0rem;
   }
 }
 .services-boxed .service-box .read-more {
@@ -5058,8 +5058,8 @@ body.rounded-btns .read-more {
 /*  End  stats section Rules    */
 /*    Start dark theme rules  */
 body.dark-theme {
-  color: var(--clr-white);
-  background: var(--clr-dark-blue);
+  color: var(--clr-dark-blue);
+  background: var(--clr-white);
   /* about section */
 }
 body.dark-theme .header-basic .header-logo .logo-img.light-logo {
