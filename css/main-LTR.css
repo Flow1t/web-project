@@ -3382,13 +3382,11 @@ body.rounded-btns .read-more {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 0rem;
 }
 .testimonials .testimonial-content .customer-img img {
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-  border: 3px solid var(--clr-main);
+  width: 100%;
+  height: auto;
   margin-bottom: 2rem;
 }
 .testimonials .content {
@@ -3400,7 +3398,7 @@ body.rounded-btns .read-more {
   font-weight: 300;
   line-height: 1.7;
   font-style: italic;
-  color: var(--clr-white);
+  color: var(--clr-dark-blue);
   padding: 0;
   margin: 0;
 }
@@ -5128,6 +5126,7 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darkens the shadow */
   margin-bottom: 5px; /* Reduces bottom margin for tighter spacing */
+  max-width: 50rem;
 }
 
 .info-items-list {
