@@ -1984,6 +1984,7 @@ body.rounded-btns .read-more {
   font-weight: 700;
   font-size: 3.5rem;
   text-transform: capitalize;
+  margin-top: 1rem;
   margin-bottom: 1.75rem;
   line-height: 1.5;
 }
@@ -2004,9 +2005,9 @@ body.rounded-btns .read-more {
 
 .hero-swiper-slider .slide-subtitle, .page-hero .hero-text-area .hero-subtitle {
   opacity: 0.75;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 991px) {
   .hero-swiper-slider .slide-subtitle, .page-hero .hero-text-area .hero-subtitle {
