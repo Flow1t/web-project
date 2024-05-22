@@ -32,7 +32,7 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
 :root {
   /*Colors CSS Varibales*/
   /*================  main-color values */
-  --clr-main: #8024A4;
+  --clr-main: #FE3E5D;
   --clr-main-rgb: 9, 175, 244;
   /*================  accent-color values */
   --clr-accent: #0d1857;
@@ -75,6 +75,8 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
   --clr-warning-rgb: 155, 106, 1;
   --ltr-main-font-f: "Jost", "sans-serif";
   --rtl-main-font-f: "Tajawal", "sans-serif";
+  /* ===============  header-color values */
+  --clr-header: #4BC4D7;
 }
 
 /*========== Start Global Rules ==========*/
@@ -1641,7 +1643,7 @@ body.rounded-btns .read-more {
   left: -12px;
   width: 6px;
   aspect-ratio: 1/1;
-  background-color: var(--clr-main);
+  background-color: var(--clr-header);
   scale: 0;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
@@ -1659,7 +1661,6 @@ body.rounded-btns .read-more {
 .content-always-light.header-basic .controls-box .header-search-btn, .is-sticky.header-basic .controls-box .header-search-btn {
   color: var(--clr-white);
 }
-
 .header-basic {
   position: fixed;
   top: 0;
@@ -1669,7 +1670,7 @@ body.rounded-btns .read-more {
   border-bottom: 1px solid transparent;
 }
 .is-sticky.header-basic {
-  background-color: var(--clr-main);
+  background-color: var(--clr-header);
 }
 .is-sticky.header-basic .menu-link {
   color: var(--clr-white) !important;
@@ -1730,7 +1731,7 @@ body.rounded-btns .read-more {
 }
 @media (max-width: 1199px) {
   .header-basic {
-    background-color: var(--clr-main);
+    background-color: var(--clr-header);
   }
   .header-basic .controls-box .header-search-btn {
     color: var(--clr-white);
@@ -1786,8 +1787,8 @@ body.rounded-btns .read-more {
 }
 .header-basic .header-logo .logo-img {
   display: block;
-  max-width: 10rem;
-  max-height: calc(90px - 10px);
+  max-width: 15rem;
+  max-height: auto;
   transition: all 0.5s ease-in-out 0s;
 }
 .header-basic .header-logo .logo-img.light-logo {
@@ -1817,7 +1818,7 @@ body.rounded-btns .read-more {
     justify-content: unset;
     overflow: auto;
     overflow-x: hidden;
-    background-color: var(--clr-main);
+    background-color: var(--clr-header);
   }
 }
 @media (max-width: 767px) {
@@ -1851,7 +1852,7 @@ body.rounded-btns .read-more {
   transition: all 0.3s ease-in-out 0s;
 }
 .header-basic .menu-link.active, .header-basic .menu-link:hover {
-  color: var(--clr-white);
+  color: var(--clr-header);
 }
 .header-basic .menu-link.active::before, .header-basic .menu-link:hover::before {
   scale: 1;
@@ -1863,7 +1864,7 @@ body.rounded-btns .read-more {
     justify-content: stretch;
     width: 100%;
     padding: 0.75rem 1rem 0.75rem 0;
-    color: var(--clr-white);
+    color: var(--clr-header);
     line-height: calc(90px / 2);
   }
 }
@@ -1972,7 +1973,7 @@ body.rounded-btns .read-more {
   background-color: var(--clr-white);
 }
 .header-basic.inner-page-header .controls-box .header-search-btn {
-  color: var(--clr-white);
+  color: var(--clr-header);
 }
 
 /*
@@ -2217,6 +2218,7 @@ body.rounded-btns .read-more {
     justify-content: space-between;
   }
 }
+/* tombol next prev */
 .hero-swiper-slider .swiper-button-prev,
 .hero-swiper-slider .swiper-button-next {
   width: 3rem;
@@ -2229,7 +2231,7 @@ body.rounded-btns .read-more {
   background-color: rgba(var(--clr-main-rgb), 1);
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
-  background: rgba(var(--clr-white-rgb), 0.35);
+  background: rgba(var(--clr-dark-grey-rgb), 0.35);
   color: var(--clr-main);
   outline: none;
   top: 50%;
@@ -2320,7 +2322,7 @@ body.rounded-btns .read-more {
   height: 0.5rem;
   display: inline-block;
   border-radius: 2rem;
-  background-color: var(--clr-white);
+  background-color: var(--clr-dark-grey);
   opacity: 0.65;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -2472,7 +2474,7 @@ body.rounded-btns .read-more {
 .services-boxed .service-box {
   border-radius: 0.5rem;
   padding: 0.5rem;
-  border: 1px solid rgba(var(--clr-main-rgb), 0.35);
+  border: 0px solid rgba(var(--clr-white), 0.35);
   box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.1);
 }
 .services-boxed .service-box::before {
@@ -3386,7 +3388,8 @@ body.rounded-btns .read-more {
 }
 .testimonials .testimonial-content .customer-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   margin-bottom: 2rem;
 }
 .testimonials .content {
@@ -3677,6 +3680,8 @@ body.rounded-btns .read-more {
 }
 
 .contact-info-card {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   padding: 0;
   padding-bottom: 1rem;
@@ -3766,7 +3771,7 @@ body.rounded-btns .read-more {
 }
 
 .dark-color-footer {
-  background-color: var(--clr-dark-blue);
+  background-color: var(--clr-header);
 }
 .dark-color-footer .sc-wrapper .sc-list .sc-item:hover .sc-icon,
 .dark-color-footer .terms-links,
@@ -5130,6 +5135,7 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
 }
 
 .info-items-list {
+  height: 100%;
   margin-bottom: 5px; /* Further reduces space at the bottom */
 }
 
