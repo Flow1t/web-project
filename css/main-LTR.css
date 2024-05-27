@@ -2110,6 +2110,7 @@ body.rounded-btns .read-more {
     align-items: stretch; /* Ensure buttons take full width */
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
+    width: 250px;
   }
 }
 .page-hero .cta-links-area .cta-link:last-child {
