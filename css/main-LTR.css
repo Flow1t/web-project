@@ -672,7 +672,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none !important;
-  text-align: center;
+  text-align: left;
   text-transform: capitalize;
   letter-spacing: 1px;
   outline: none;
@@ -2101,7 +2101,7 @@ body.rounded-btns .read-more {
   margin-bottom: 0;
   margin-right: 1.5rem;
   font-size: 1.15rem;
-  max-width: 200px;
+  min-width: 100px;
   margin-bottom: 1rem; /* Add bottom margin for spacing */
 }
 @media (max-width: 991px) {
