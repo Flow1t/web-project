@@ -2480,7 +2480,7 @@ body.rounded-btns .read-more {
   border-radius: 0.5rem;
   padding: 0.5rem;
   border: 0px solid rgba(var(--clr-white), 0.35);
-  box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.3);
 }
 .services-boxed .service-box::before {
   content: "";
@@ -2578,10 +2578,10 @@ body.rounded-btns .read-more {
   background-color: var(--clr-semi-dark-blue);
 }
 .services-boxed.has-dark-bg .service-title {
-  color: var(--clr-white);
+  color: var(--clr-grey);
 }
 .services-boxed.has-dark-bg .service-text {
-  color: var(--clr-white);
+  color: var(--clr-grey);
   opacity: 0.85;
 }
 
