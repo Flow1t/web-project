@@ -2566,7 +2566,7 @@ body.rounded-btns .read-more {
 }
 @media (max-width: 991px) {
   .services-boxed .service-box {
-    padding: 0rem;
+    padding: 0.5rem;
   }
 }
 .services-boxed .service-box .read-more {
