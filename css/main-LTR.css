@@ -2477,8 +2477,8 @@ body.rounded-btns .read-more {
   margin-bottom: 2rem;
 }
 .services-boxed .service-box {
-  border-radius: 0.5rem;
-  padding: 0.5rem;
+  border-radius: 1.5rem;
+  padding: 0rem;
   border: 0px solid rgba(var(--clr-white), 0.35);
   box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.3);
 }
@@ -2854,7 +2854,7 @@ body.rounded-btns .read-more {
   display: block;
   min-width: 100%;
   object-fit: cover;
-  height: 450px;
+  height: 200px;
   transition: scale 0.5s ease-in-out 0s;
 }
 .portfolio .item .portfolio-bg-img {
@@ -5170,4 +5170,54 @@ ul.about-text {
     height: 100px;
     width: 90vw;
   }
+}
+
+.star-rating i {
+  color: #f1c40f;
+  margin-left: 2px;
+}
+
+.portfolio-wrapper {
+  padding: 20px;
+}
+
+.portfolio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-item {
+  margin-bottom: 20px;
+}
+
+.box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-content {
+  padding-top: 15px;
+}
+
+.post-title {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.post-excerpt {
+  font-size: 14px;
+  color: #555;
 }
