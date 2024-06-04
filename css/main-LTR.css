@@ -2478,7 +2478,7 @@ body.rounded-btns .read-more {
 }
 .services-boxed .service-box {
   border-radius: 1.5rem;
-  padding: 0rem;
+  padding: 1rem;
   border: 0px solid rgba(var(--clr-white), 0.35);
   box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.3);
 }
@@ -2566,7 +2566,7 @@ body.rounded-btns .read-more {
 }
 @media (max-width: 991px) {
   .services-boxed .service-box {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }
 .services-boxed .service-box .read-more {
@@ -2854,7 +2854,7 @@ body.rounded-btns .read-more {
   display: block;
   min-width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 225px;
   transition: scale 0.5s ease-in-out 0s;
 }
 .portfolio .item .portfolio-bg-img {
