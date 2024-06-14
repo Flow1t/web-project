@@ -726,3 +726,36 @@ $(function () {
     End Vendors plugins options Area 
      ---------------------------------- */
 });
+
+// Function to open the modal and play video
+function openVideoModal(videoUrl) {
+  var modal = document.getElementById('videoModal');
+  var videoPlayer = document.getElementById('videoPlayer');
+  var videoSource = document.getElementById('videoSource');
+
+  // Set the video source
+  videoSource.setAttribute('src', videoUrl);
+  videoPlayer.load(); // Reload the video element to apply changes
+  videoPlayer.play(); // Start playing the video
+
+  // Show the modal
+  modal.style.display = 'block';
+}
+
+// Function to close the modal and stop video
+function closeVideoModal() {
+  var modal = document.getElementById('videoModal');
+  var videoPlayer = document.getElementById('videoPlayer');
+
+  // Pause the video and hide the modal
+  videoPlayer.pause();
+  modal.style.display = 'none';
+}
+
+// Close modal if clicked outside of the video content
+var modal = document.getElementById('videoModal');
+modal.onclick = function(event) {
+  if (event.target == modal) {
+    closeVideoModal();
+  }
+};
