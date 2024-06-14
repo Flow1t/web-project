@@ -5255,9 +5255,10 @@ ul.about-text {
     position: relative;
     background-color: #fefefe;
     margin: auto;
+    margin-top: 8rem;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
     max-width: 800px;
   }
 
