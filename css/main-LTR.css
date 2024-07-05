@@ -2599,7 +2599,7 @@ body.rounded-btns .read-more {
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 0.25rem;
-  background-color: var(--clr-yellow);
+  background-color: var(--clr-header);
   z-index: 0;
 }
 .service-single .service-sidebar .sidebar-pane .sidebar-title {
