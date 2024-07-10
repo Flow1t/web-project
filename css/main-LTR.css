@@ -4121,6 +4121,7 @@ body.rounded-btns .read-more {
   margin: 1rem 0;
   border-radius: 0.25rem;
   background-color: rgba(var(--clr-main-rgb), 0.15);
+  min-height: 33rem;
 }
 .blog .posts-grid .post-box:hover .post-img-wrapper .overlay-color {
   opacity: 0.65;
@@ -5137,7 +5138,8 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darkens the shadow */
   margin-bottom: 5px; /* Reduces bottom margin for tighter spacing */
-  max-width: 50rem;
+  max-width: 30rem;
+  min-height: 30rem;
 }
 
 .info-items-list {
