@@ -78,6 +78,9 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
   /* ===============  header-color values */
   --clr-header: #4BC4D7;
   --clr-yellow: #ffc212;
+  /* ===============  new palette */
+  --clr-new-footer: #2596be;
+  --clr-new-footer-rgb: 37, 150, 190;
 }
 
 /*========== Start Global Rules ==========*/
@@ -678,7 +681,7 @@ a:hover {
   letter-spacing: 1px;
   outline: none;
   border: 2px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0rem;
   border-bottom-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -1638,7 +1641,7 @@ body.rounded-btns .read-more {
 
 /*ُEnd global, helper classes , components Rules*/
 /* Start .page-header Rules   */
-.header-basic .has-sub-menu > .sub-menu .sub-menu-link::before, .header-basic .menu-link::before {
+/* .header-basic .has-sub-menu > .sub-menu .sub-menu-link::before, .header-basic .menu-link::before {
   content: "";
   position: absolute;
   left: -12px;
@@ -1648,7 +1651,7 @@ body.rounded-btns .read-more {
   scale: 0;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
-}
+} */
 
 .content-always-light.header-basic .menu-link, .is-sticky.header-basic .menu-link {
   color: var(--clr-black);
@@ -1967,7 +1970,7 @@ body.rounded-btns .read-more {
 }
 .header-basic.inner-page-header a,
 .header-basic.inner-page-header .menu-link {
-  color: var(--clr-white);
+  color: var(--clr-black);
 }
 .header-basic.inner-page-header a::before,
 .header-basic.inner-page-header .menu-link::before {
@@ -2494,7 +2497,7 @@ body.rounded-btns .read-more {
   right: 0;
   transform: scaleX(0);
   transform-origin: right;
-  background-color: rgba(var(--clr-main-rgb),1);
+  background-color: rgba(var(--clr-new-footer-rgb),1);
   z-index: -3;
   transition: transform 0.5s ease 0s;
 }
@@ -2599,7 +2602,7 @@ body.rounded-btns .read-more {
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 0.25rem;
-  background-color: var(--clr-header);
+  background-color: var(--clr-new-footer);
   z-index: 0;
 }
 .service-single .service-sidebar .sidebar-pane .sidebar-title {
@@ -3777,7 +3780,7 @@ body.rounded-btns .read-more {
 }
 
 .dark-color-footer {
-  background-color: var(--clr-header);
+  background-color: var(--clr-new-footer);
 }
 .dark-color-footer .sc-wrapper .sc-list .sc-item:hover .sc-icon,
 .dark-color-footer .terms-links,
@@ -5266,8 +5269,8 @@ ul.about-text {
 
   .close {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 0px;
+    right: 0px;
     font-size: 30px;
     font-weight: bold;
     color: #aaa;
