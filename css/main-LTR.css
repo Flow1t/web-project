@@ -77,10 +77,11 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
   --rtl-main-font-f: "Tajawal", "sans-serif";
   /* ===============  header-color values */
   --clr-header: #4BC4D7;
-  --clr-yellow: #ffc212;
+  --clr-yellow: #ffc414;
   /* ===============  new palette */
   --clr-new-footer: #2596be;
   --clr-new-footer-rgb: 37, 150, 190;
+  --clr-purple: #523978;
 }
 
 /*========== Start Global Rules ==========*/
@@ -813,13 +814,13 @@ a:hover {
 .btn-outline {
   /**/
   border: 2px solid;
-  color: var(--clr-main);
-  border-color: var(--clr-main);
-  background-color: var(--clr-white);
+  color: var(--clr-purple);
+  border-color: var(--clr-yellow);
+  background-color: var(--clr-yellow);
 }
 .btn-outline:hover {
-  color: var(--clr-white);
-  background-color: var(--clr-main);
+  color: var(--clr-purple);
+  background-color: var(--clr-white);
 }
 
 .play-btn-col-dir .play-video-btn {
@@ -847,8 +848,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--clr-white);
-  background-color: var(--clr-main);
+  color: var(--clr-new-footer);
+  background-color: var(--clr-white);
   border-radius: 0.25rem;
   transition: transform 0.3s ease-in-out 0s;
 }
@@ -1990,6 +1991,10 @@ body.rounded-btns .read-more {
   text-transform: capitalize;
   margin-top: 1rem;
   margin-bottom: 1.75rem;
+  margin-left: -8rem;
+  padding-left: 8rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   line-height: 1.5;
 }
 .hero-swiper-slider .slide-title .first-word, .page-hero .hero-text-area .hero-title .first-word {
@@ -2093,7 +2098,7 @@ body.rounded-btns .read-more {
 .page-hero .hero-text-area.content-always-light .slide-title,
 .page-hero .hero-text-area.content-always-light .slide-subtitle,
 .page-hero .hero-text-area.content-always-light .hero-social-icons .sc-link {
-  color: var(--clr-main) !important;
+  color: var(--clr-white) !important;
 }
 .page-hero .cta-links-area {
   display: inline-flex;
@@ -2236,7 +2241,7 @@ body.rounded-btns .read-more {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: var(--clr-white);
+  color: var(--clr-purple);
   background-color: rgba(var(--clr-main-rgb), 1);
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
@@ -2336,7 +2341,7 @@ body.rounded-btns .read-more {
   transition: all 0.5s ease-in-out 0s;
 }
 .hero-swiper-slider .slides-state .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: var(--clr-main);
+  background-color: var(--clr-new-footer);
   width: 2.5rem;
   opacity: 1;
 }
@@ -2450,6 +2455,8 @@ body.rounded-btns .read-more {
 }
 .services-boxed .service-content {
   margin-bottom: 1.5rem;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .services-boxed .service-title {
   text-transform: capitalize;
@@ -2458,21 +2465,24 @@ body.rounded-btns .read-more {
   margin-bottom: 1rem;
 }
 .services-boxed .service-text {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 2rem;
+  line-height: 1;
   margin: 0;
-  opacity: 0.85;
+  opacity: 1;
+  color: #523978;
+  font-weight: 600;
+  padding: 0.5rem;
 }
 @media (max-width: 991px) {
   .lifted-up-box.services-boxed .services-row {
     padding: 6rem 0;
   }
 }
-.lifted-up-box.services-boxed .service-box {
+.lifted-up-box.services-boxed .service-box .box-service{
   margin-top: -8rem;
 }
 @media (max-width: 991px) {
-  .lifted-up-box.services-boxed .service-box {
+  .lifted-up-box.services-boxed .service-box .box-service{
     margin-top: 0rem;
   }
 }
@@ -2481,11 +2491,15 @@ body.rounded-btns .read-more {
   margin-bottom: 2rem;
 }
 .services-boxed .service-box {
-  border-radius: 1.5rem;
+  border-radius: 4rem;
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
   padding: 1rem;
   border: 0px solid rgba(var(--clr-white), 0.35);
   box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.3);
+  padding-bottom: 2rem;
 }
+
 .services-boxed .service-box::before {
   content: "";
   border-radius: inherit;
@@ -2501,21 +2515,46 @@ body.rounded-btns .read-more {
   z-index: -3;
   transition: transform 0.5s ease 0s;
 }
+
+.box-service::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: auto;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color: rgba(var(--clr-new-footer-rgb),1);
+  z-index: -3;
+  transition: transform 0.5s ease 0s;
+}
+
 .services-boxed .service-box.reveal-up:hover .service-title,
 .services-boxed .service-box.reveal-up:hover .service-text,
 .services-boxed .service-box.reveal-up:hover .font-icon,
-.services-boxed .service-box.reveal-up:hover .read-more, .services-boxed .service-box.reveal-down:hover .service-title,
+.services-boxed .service-box.reveal-up:hover .read-more,
+.services-boxed .service-box.reveal-up:hover .custom-line, 
+.services-boxed .service-box.reveal-down:hover .service-title,
 .services-boxed .service-box.reveal-down:hover .service-text,
 .services-boxed .service-box.reveal-down:hover .font-icon,
-.services-boxed .service-box.reveal-down:hover .read-more, .services-boxed .service-box.reveal-start:hover .service-title,
+.services-boxed .service-box.reveal-down:hover .read-more,
+.services-boxed .service-box.reveal-down:hover .custom-line, 
+.services-boxed .service-box.reveal-start:hover .service-title,
 .services-boxed .service-box.reveal-start:hover .service-text,
 .services-boxed .service-box.reveal-start:hover .font-icon,
-.services-boxed .service-box.reveal-start:hover .read-more, .services-boxed .service-box.reveal-end:hover .service-title,
+.services-boxed .service-box.reveal-start:hover .read-more,
+.services-boxed .service-box.reveal-start:hover .custom-line, 
+.services-boxed .service-box.reveal-end:hover .service-title,
 .services-boxed .service-box.reveal-end:hover .service-text,
 .services-boxed .service-box.reveal-end:hover .font-icon,
-.services-boxed .service-box.reveal-end:hover .read-more {
+.services-boxed .service-box.reveal-end:hover .read-more,
+.services-boxed .service-box.reveal-end:hover .custom-line {
   color: var(--clr-white);
 }
+
 .services-boxed .service-box.reveal-up::before {
   left: 0;
   top: auto;
@@ -2719,12 +2758,12 @@ body.rounded-btns .read-more {
   margin-bottom: 1.5rem;
 }
 .about .text-area .about-text {
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 3rem;
-  opacity: 0.75;
-  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0rem;
+  opacity: 1;
+  letter-spacing: 0px;
 }
 .about .text-area .about-text::first-letter {
   text-transform: capitalize;
@@ -2941,7 +2980,7 @@ body.rounded-btns .read-more {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: var(--clr-white);
+  color: var(--clr-purple);
   background-color: rgba(var(--clr-main-rgb), 1);
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
@@ -3456,19 +3495,19 @@ body.rounded-btns .read-more {
 
 .testimonials .swiper-button-prev,
 .testimonials .swiper-button-next {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
-  color: var(--clr-white);
+  font-size: 4rem;
+  color: var(--clr-purple);
   background-color: rgba(var(--clr-main-rgb), 1);
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(var(--clr-white-rgb), 0.25);
+  background-color: rgba(var(--clr-new-footer-rgb), 0);
   margin-top: 0;
 }
 .testimonials .swiper-button-prev:hover,
@@ -3706,7 +3745,7 @@ body.rounded-btns .read-more {
   text-align: center;
   margin-right: 0.5rem;
   vertical-align: middle;
-  color: var(--clr-main);
+  color: var(--clr-white);
 }
 .contact-info-card .info {
   text-decoration: none;
@@ -4260,7 +4299,7 @@ body.rounded-btns .read-more {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: var(--clr-white);
+  color: var(--clr-purple);
   background-color: rgba(var(--clr-main-rgb), 1);
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
@@ -5145,6 +5184,46 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
   min-height: 30rem;
 }
 
+.box-service {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darkens the shadow */
+  margin-bottom: 5px; /* Reduces bottom margin for tighter spacing */
+  max-width: 35rem;
+  border-radius: 4rem;
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
+.box-about-us {
+  padding: 20px;
+  border: 1px solid var(--clr-yellow);
+  border-radius: 8px;
+  background-color: var(--clr-yellow);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darkens the shadow */
+  margin-bottom: 5px; /* Reduces bottom margin for tighter spacing */
+  max-width: 50rem;
+  border-radius: 4rem;
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
+.box-core {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--clr-new-footer);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darkens the shadow */
+  margin-bottom: 5px; /* Reduces bottom margin for tighter spacing */
+  max-width: 50rem;
+  border-radius: 4rem;
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  padding-bottom: 0rem;
+}
+
 .info-items-list {
   height: 100%;
   margin-bottom: 5px; /* Further reduces space at the bottom */
@@ -5216,6 +5295,7 @@ ul.about-text {
 
 .service-content {
   padding-top: 15px;
+  padding-bottom: 1rem;
 }
 
 .post-title {
@@ -5292,3 +5372,25 @@ ul.about-text {
     height: 100%;
     object-fit: contain; /* Ensure video maintains aspect ratio */
   }
+
+  .container-hero {
+    background-color: #40a8e6; /* Match the background color */
+    padding: 20px;
+    border-radius: 0 100px 0 0; /* Top-right rounded corner */
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.custom-line {
+  width: 8rem; /* Adjust the length of the line */
+  height: 4px; /* Adjust the thickness of the line */
+  background-color: #523978; /* Adjust the color of the line */
+  margin: 0 auto; /* Center the line */
+  transition: background-color 0.3s;
+}
+
+.services-boxed .service-box:hover .custom-line {
+  background-color: var(--clr-white); /* Change the line color to white on hover */
+}
