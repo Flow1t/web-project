@@ -461,7 +461,7 @@ $(function () {
         speed: 500,
         loop: true,
         grabCursor: true,
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 50,
         delay: 5000,
         autoplay: {
